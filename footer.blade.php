@@ -174,7 +174,6 @@
 <!-- scroll top button -->
 <button class="scroltop fa fa-arrow-up"></button>
 </div>
-<!-- JavaScript  files ========================================= -->
 <script src="/template/dinas/js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="/template/dinas/plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="/template/dinas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
@@ -188,11 +187,33 @@
 <script src="/template/dinas/plugins/masonry/masonry-4.2.2.js"></script><!-- MASONRY -->
 <script src="/template/dinas/plugins/masonry/isotope.pkgd.min.js"></script><!-- MASONRY -->
 <script src="/template/dinas/plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
 <script src="/template/dinas/js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="/template/dinas/js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="/template/dinas/js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
+<script  src="/template/dinas/js/dz.ajax.js"></script>
+<!-- contact-us js -->
+<!-- revolution JS FILES -->
+<script src="/template/dinas/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
 
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/template/dinas/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script  src="template/dinas/js/rev.slider.js"></script>
+<script>
+jQuery(document).ready(function() {
+	'use strict';
+	dz_rev_slider_4();
+});	/*ready*/
+</script>
 </body>
 
 </html>

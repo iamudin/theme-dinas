@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="/template/dinas/css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="/template/dinas/css/style.css">
-	<link class="skin" rel="stylesheet" type="text/css" href="/template/dinas/css/skin/skin-6.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="/template/dinas/css/skin/skin-3.css">
 	<link rel="stylesheet" type="text/css" href="/template/dinas/css/templete.css">
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -22,7 +22,7 @@
 				<div class=" d-flex bar align-items-center justify-content-between">
 					<div class="dez-topbar-left">
 						<ul>
-							<li class="text-dark"><i class="fas fa-map-marker-alt text-primary"></i>Transport ltd. inc. 300 Pennsylvania Ave NW</li>
+							<li class="text-dark"><i class="fas fa-map-marker-alt text-primary"></i> {{ get_option('alamat') }}</li>
 							<li class="text-dark"><i class="flaticon-building text-primary"></i>Certified ISO 9001 : 2008</li>
 						</ul>
 					</div>
@@ -49,10 +49,10 @@
 					<div class="col-md-8">
 						<ul class="contact-info clearfix">
 							<li>
-								<h6 class="text-primary"><i class="fa fa-phone text-primary"></i> Call Us</h6>
+								<h6 class="text-primary"><i class="fa fa-phone text-primary"></i> Telp</h6>
 								<span>+141 0800-123456</span> </li>
 							<li>
-								<h6 class="text-primary"><i class="far fa-envelope text-primary"></i> Send us a Mail</h6>
+								<h6 class="text-primary"><i class="far fa-envelope text-primary"></i> Kirim Email</h6>
 								<span>info@dexignzone.com</span> </li>
 							<li>
 								<h6 class="text-primary"><i class="far fa-clock text-primary"></i> Opening Time</h6>
@@ -101,22 +101,8 @@
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse nav-dark justify-content-start" id="navbarNavDropdown">
                             <ul class="nav navbar-nav">
-								<li class="active"> <a href="javascript:void(0);">Home<i class="fa fa-chevron-down"></i></a>
-										<ul class="mega-menu deznav-scroll">
-								<li><a href="index-13.html"><img src="images/demo/index-13.jpg" alt=""><span>Home 13</span></a></li>
-									<li><a href="index.html"><img src="images/demo/index.jpg" alt=""><span>Home 01</span></a></li>
-									<li><a href="index-2.html"><img src="images/demo/index-2.jpg" alt=""><span>Home 02</span></a></li>
-									<li><a href="index-3.html"><img src="images/demo/index-3.jpg" alt=""><span>Home 03</span></a></li>
-									<li><a href="index-4.html"><img src="images/demo/index-4.jpg" alt=""><span>Home 04</span></a></li>
-									<li><a href="index-5.html"><img src="images/demo/index-5.jpg" alt=""><span>Home 05</span></a></li>
-									<li><a href="index-6.html"><img src="images/demo/index-6.jpg" alt=""><span>Home 06</span></a></li>
-									<li><a href="index-7.html"><img src="images/demo/index-7.jpg" alt=""><span>Home 07</span></a></li>
-									<li><a href="index-8.html"><img src="images/demo/index-8.jpg" alt=""><span>Home 08</span></a></li>
-									<li><a href="index-9.html"><img src="images/demo/index-9.jpg" alt=""><span>Home 09</span></a></li>
-									<li><a href="index-10.html"><img src="images/demo/index-10.jpg" alt=""><span>Home 10</span></a></li>
-									<li><a href="index-11.html"><img src="images/demo/index-11.jpg" alt=""><span>Home 11</span></a></li>
-									<li><a href="index-12.html"><img src="images/demo/index-12.jpg" alt=""><span>Home 12</span></a></li>
-								</ul>  
+								<li class="active"> <a href="javascript:void(0);"> <i class="fa fa-home"></i> Home</a>
+										 
 								</li>
 								<li> <a href="javascript:void(0);">Features<i class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
