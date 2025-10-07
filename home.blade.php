@@ -54,28 +54,28 @@ display: block;
                     <div class="col-lg-8 col-md-12 m-b30">
                                 <h2 class="widget-title"> <i class="fa fa-rss"></i> Terbaru</h2>
 
-                        @foreach(query()->index_limit('berita',10) as $row)
-                        <div class="blog-post blog-md clearfix date-style-2">
-                            <div class="dez-post-media dez-img-effect zoom-slow"> <a href="{{ $row->link }}"><img src="{{ $row->thumbnail }}" alt=""></a> </div>
-                            <div class="dez-post-info">
-                                <div class="dez-post-title ">
-                                    <h3 class="post-title"><a href="{{ $row->link }}">{{ $row->title }}</a></h3>
+                        @foreach(query()->index_limit('berita', 10) as $row)
+                            <div class="blog-post blog-md clearfix date-style-2 pb-3 pt-0 mb-3" style="border-bottom:1px dashed #ccc;">
+                                <div class="dez-post-media dez-img-effect zoom-slow rounded rounded-lg" style="max-height: 200px;" > <a href="{{ $row->link }}"><img src="{{ $row->thumbnail }}" class=""></a> </div>
+                                <div class="dez-post-info">
+                                    <div class="dez-post-title ">
+                                        <h3 class="post-title"><a href="{{ $row->link }}">{{ $row->title }}</a></h3>
+                                    </div>
+                                    <div class="dez-post-meta ">
+                                        <ul>
+                                            <li class="post-date"> <i class="fa fa-calendar"></i><strong>{{ $row->created_at->translatedFormat('d M') }}</strong> <span> {{ $row->created_at->format('Y') }}</span> </li>
+                                        <li class="post-author"><i class="fa fa-user"></i>By <a href="javascript:void(0);">demongo</a> </li>
+                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:void(0);">0</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dez-post-text">
+                                        <p>{{ $row->short_content }}</p>
+                                    </div>
+
+
                                 </div>
-                                <div class="dez-post-meta ">
-                                    <ul>
-                                        <li class="post-date"> <i class="fa fa-calendar"></i><strong>{{ $row->created_at->translatedFormat('d M') }}</strong> <span> {{ $row->created_at->format('Y') }}</span> </li>
-                                    <li class="post-author"><i class="fa fa-user"></i>By <a href="javascript:void(0);">demongo</a> </li>
-                                        <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:void(0);">0</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dez-post-text">
-                                    <p>{{ $row->short_content }}</p>
-                                </div>
-                            
-                               
                             </div>
-                        </div>
-                 @endforeach
+                         @endforeach
                         <!-- Pagination start -->
                         <div class="pagination-bx clearfix m-b30">
                             <ul class="pagination">
